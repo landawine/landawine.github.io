@@ -1,0 +1,13 @@
+{% assign navigatable = site.html_pages | sort: 'order' %}
+
+<nav>
+  <ul>
+    {%- for page in navigatable -%}
+      <li>
+        <a href="{{ page.url }}">
+          <span>{{ page.nav }}</span>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>

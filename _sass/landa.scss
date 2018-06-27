@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+footer,
+section,
+aside,
+nav,
+article {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+html {
+  background: url(/assets/images/canvas.jpg);
+  height: 100%;
+}
+
+body {
+  background: url(/assets/images/stain.png) no-repeat center 140px;  
+  height: 100%;
+}
+
+a,
+a:visited {
+  color: #610000;
+}
+
+a:hover,
+a:visited:hover {
+  color: #000000;
+}
+
+.klear {
+  clear: both;
+}
+
+
+/**** HEADER ****/
+
+header {
+  background: #ffffff;
+  padding: 1em;
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+
+/**** NAV ****/
+
+nav {
+  height: 40px;
+  background: #2d2d2d;
+
+  ul,
+  ul li {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+
+
+  ul li {
+    margin: 0;
+    display: inline;
+  }
+
+  a,
+  a:visited {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: 1em;
+    color: #bdbdbd;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:visited:hover {
+    color: #e8e8e8;
+  }
+}
+
+.csstransitions a,
+.csstransitions nav a {
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+}
+
+
+/**** SECTION ****/
+
+@media all and (max-width: 99999px) {
+  section {
+    width: 790px;
+  }
+
+  header {
+    img {
+      width: 768px;
+    }
+  }
+}
+
+@media all and (max-width: 1199px) {
+  section {
+    width: 790px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  section {
+    width: 790px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section {
+    width: 100%;
+  }
+
+  header {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 575px) {
+
+}
+
+#slate {
+  
+}
+
+img {
+  width: 100%;
+  display: block;
+
+  &.glossy {
+    margin: 2em 1em;
+  }
+}
+
+section {
+  margin: 0 auto;
+
+  article {
+    padding: 1em;
+    background: #ffffff;
+  }
+
+  article,
+  aside {
+    margin: 2em 1em;
+  }
+}
+
+section#paginate_content {
+  width: 820px;
+  padding-top: 10px;
+}
+
+
+
+article.accolade {
+  width: 220px;
+  margin: 10px;
+  float: left;
+}
+
+.borderradius {
+   article,
+   aside img {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+  }
+}
+
+.boxshadow {
+  article,
+  aside img {
+    box-shadow: 0 2px 5px rgba(79, 79, 79, 0.33);
+    -webkit-box-shadow: 0 2px 5px rgba(79, 79, 79, 0.33);
+    -moz-box-shadow: 0 2px 5px rgba(79, 79, 79, 0.33);
+  }
+}
+
+article aside {
+  margin: -15px 0 0 0;
+  padding: 0 0 30px 0;
+  background: url(/assets/images/shadow.png) no-repeat center bottom;
+  display: none;
+}
+
+article aside:first-child {
+  display: block;
+}
+
+article aside img {
+  margin: 0 auto;
+  display: block;
+}
+
+.fontface {
+  article {
+    h1, h2 {
+      font-family: 'Goudy Bookletter 1911';
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1em;
+      color: #610000;
+    }
+
+    h2 {
+      font-size: 1em;
+      line-height: 1.2em;
+      color: #606060;
+    }
+  }
+}
+
+.fontface article 
+
+article p {
+  font-family: Georgia, serif;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: #4f4f4f;
+}
+
+/**** FOOTER ****/
+
+footer {
+  padding: 15px 0;
+  clear: both;
+}
+
+footer div {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.fontface footer div {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #828282;
+}
+
+.fontface footer #railtype {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-style: italics;
+  font-size: 1em;
+  font-weight: normal;
+  color: #a4a4a4;
+}
+
+
+/**** PAGINATION ****/
+
+.paginator {
+  width: 790px;
+  margin: 0 auto;
+}
+
+.active,
+.inactive {
+  margin-right: 10px;
+  padding: 2px 5px;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.borderradius .active,
+.borderradius .inactive {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.boxshadow .active,
+.boxshadow .inactive {
+  box-shadow: 0 1px 3px #4f4f4f;
+  -webkit-box-shadow: 0 1px 3px #4f4f4f;
+  -moz-box-shadow: 0 1px 3px #4f4f4f;
+}
