@@ -54,8 +54,9 @@ article aside:first-child { display: block; }
 article aside img { margin: 0 auto; display: block; }
 
 .fontface article h1, .fontface article h2 { font-family: 'Goudy Bookletter 1911'; font-weight: normal; }
-.fontface article h1 { font-size: 1.5em; line-height: 1em; color: #610000; }
-.fontface article h2 { font-size: 1em; line-height: 1.2em; color: #606060; }
+.fontface article h1 { font-size: 2em; color: #610000; }
+.fontface article h1 + h2 { margin-top: 1em; }
+.fontface article h2 { font-size: 1.5em; color: #222222; }
 
 .fontface article article p { font-family: Georgia, serif; font-size: 1.1em; line-height: 1.7em; color: #4f4f4f; }
 

@@ -229,15 +229,17 @@ article aside img {
     }
 
     h1 {
-      font-size: 1.5em;
-      line-height: 1em;
+      font-size: 2em;
       color: #610000;
+
+      & + h2 {
+        margin-top: 1em;
+      }
     }
 
     h2 {
-      font-size: 1em;
-      line-height: 1.2em;
-      color: #606060;
+      font-size: 1.5em;
+      color: #222222;
     }
   }
 }
